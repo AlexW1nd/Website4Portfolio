@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Мастерская вышивки</title>
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header>
+        <div class="logo">
+            <h1>Embroidery Studio</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="/">Главная</a></li>
+                <li><a href="/gallery/">Галерея</a></li>
+                <li><a href="/about/">О нас</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Главный блок -->
+        <section class="hero">
+            <h2>Дизайны для мастеров вышивки</h2>
+
+            <p>
+                Авторская вышивка ручной работы.
+                Уникальные изделия, созданные с любовью.
+            </p>
+
+            <a href="/gallery/">Посмотреть работы</a>
+        </section>
+
+        <!-- Информация о мастере -->
+        <section class="about-preview">
+            <h2>Добро пожаловать в мою мастерскую!</h2>
+
+            <p>
+                Я создаю уникальные дизайны,
+                которые вы можете использовать в своих трудах.
+                Каждая работа создаётся с вниманием к деталям.
+            </p>
+        </section>
+
+        <!-- Примеры работ -->
+        <section class="gallery-preview">
+            <h2>Мои работы</h2>
+
+            <div class="gallery">
+                <img src="/static/website/images/work1.jpg"
+                     alt="Вышитые цветы">
+
+                <img src="/static/website/images/work2.jpg"
+                     alt="Авторская вышивка">
+
+                <img src="/static/website/images/work3.jpg"
+                     alt="Ручная вышивка">
+            </div>
+
+            <a href="/gallery/">Вся галерея</a>
+        </section>
+
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <p>© 2026 Embroidery Studio</p>
+        <p>Контакты: example@email.com</p>
+    </footer>
+
+</body>
+</html>
